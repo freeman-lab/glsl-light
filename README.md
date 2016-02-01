@@ -15,8 +15,8 @@ npm install glsl-basic-light --save
 Define 2 lights to use in your shader
 
 ```javascript
-pragma glslify: Light = require('glsl-basic-light')
-uniform Light lights[2];
+pragma glslify: BasicLight = require('glsl-basic-light')
+uniform BasicLight lights[2];
 ```
 
 Then set their properties on a `shader` created using `gl-shader`
@@ -53,7 +53,7 @@ shader.uniforms.lights = [
 Inside your shader just declare the struct type with
 
 ```javascript
-pragma glslify: Light = require('glsl-basic-light')
+pragma glslify: BasicLight = require('glsl-basic-light')
 ```
 
 and use as you like, e.g. to set a `uniform` or construct a variable.
