@@ -1,4 +1,4 @@
-struct Light {
+struct BasicLight {
    vec4 position;
    vec3 color; 
    float brightness;
@@ -10,4 +10,4 @@ struct Light {
    bool enabled;
 };
 
-#pragma glslify: export(Light)
+#pragma glslify: export(BasicLight)
