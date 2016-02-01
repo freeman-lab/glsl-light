@@ -7,7 +7,7 @@ struct Light {
    vec3 target;
    float cutoff;
    float exponent;
-   float enabled;
+   bool enabled;
 };
 
 #pragma glslify: export(Light)
