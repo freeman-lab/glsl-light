@@ -1,6 +1,6 @@
 # glsl-basic-light
 
-Minimal GLSL struct for a light source. Designed for use as a shader component with `glslify`.
+Minimal GLSL struct for a light source. Designed for use as a shader component with [`glslify`](https://github.com/stackgl/glslify).
 
 # install
 
