@@ -1,0 +1,25 @@
+{
+  "name": "glsl-basic-light",
+  "version": "1.0.0",
+  "description": "basic GLSL struct for a light source",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/freeman-lab/glsl-basic-light.git"
+  },
+  "keywords": [
+    "glsl",
+    "light",
+    "webgl",
+    "glslify"
+  ],
+  "author": "freeman-lab",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/freeman-lab/glsl-basic-light/issues"
+  },
+  "homepage": "https://github.com/freeman-lab/glsl-basic-light#readme"
+}
