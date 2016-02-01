@@ -73,7 +73,7 @@ enabled // bool
 ```
 
 You can use these in your shader code however you want, but typically:
-- `position` controls the position with the fourth element differentiating between a point or spot light (0.0) or a directional light (1.0) 
+- `position` controls the position of the light, with the fourth element differentiating between a point or spot light (`0.0`) or a directional light (`1.0`) 
 - `color` and `brightness` will define the light intensity
 - `attenuation` controls the light falloff with distance
 - `ambient` is the amount of ambient light associated with this light source
