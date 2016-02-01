@@ -50,11 +50,13 @@ shader.uniforms.lights = [
 
 # API
 
-Inside your shader declare the struct type with
+Inside your shader just declare the struct type with
 
 ```javascript
 pragma glslify: Light = require('glsl-basic-light')
 ```
+
+and use as you like, e.g. to set a `uniform` or construct a variable.
 
 The attributes and types on the struct are
 
