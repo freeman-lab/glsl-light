@@ -46,6 +46,7 @@ shader.uniforms.lights = [
 		enabled: true
 	}
 ]
+```
 
 # API
 
