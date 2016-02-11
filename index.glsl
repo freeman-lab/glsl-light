@@ -1,4 +1,4 @@
-struct BasicLight {
+struct SceneLight {
    vec4 position;
    vec3 color; 
    float intensity;
@@ -6,7 +6,6 @@ struct BasicLight {
    float attenuation;
    vec3 target;
    float cutoff;
-   float exponent;
    bool visible;
 };
 
