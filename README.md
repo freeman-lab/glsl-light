@@ -1,21 +1,21 @@
 # glsl-basic-light
 
-Minimal GLSL struct for a light source. Designed for use as a shader component with [`glslify`](https://github.com/stackgl/glslify).
+GLSL struct for a light source. Designed for use as a shader component with [`glslify`](https://github.com/stackgl/glslify) and [`gl-scene`](https://github.com/freeman-lab/gl-scene).
 
-# install
+## install
 
 To make avaialble in your project
 
 ```javascript
-npm install glsl-basic-light --save
+npm install glsl-scene-light --save
 ```
 
-# example
+## example
 
 Define 2 lights to use in your shader
 
-```javascript
-pragma glslify: BasicLight = require('glsl-basic-light')
+```glsl
+pragma glslify: SceneLight = require('glsl-scene-light')
 uniform BasicLight lights[2];
 ```
 
@@ -26,33 +26,33 @@ shader.uniforms.lights = [
 	{
 		position: [0.0, 0.0, 0.0, 1.0],
 		color: [1.0, 0.0, 1.0],
-		brightness: 1,
+		intensity: 1,
 		attenuation: 0.5,
 		ambient: 0.5,
 		cutoff: 180,
 		target: [0, 0, 0],
 		exponent: 0.0,
-		enabled: false
+		visible: false
 	},
 	{
 		position: [0.0, 0.0, 5.0, 1.0],
 		color: [1.0, 1.0, 0.0],
-		brightness: 2,
+		intensity: 2,
 		attenuation: 0.1,
 		ambient: 0.5,
 		cutoff: 45,
 		target: [2, 2, 0],
 		exponent: 0.5,
-		enabled: true
+		visible: true
 	}
 ]
 ```
 
-# API
+## API
 
 Inside your shader just declare the struct type with
 
-```javascript
+```glsl
 pragma glslify: BasicLight = require('glsl-basic-light')
 ```
 
@@ -63,18 +63,18 @@ The attributes and types on the struct are
 ```javascript
 position // vec4
 color // vec3
-brightness // float
+intensity // float
 attenuation // float
 ambient // float
 cutoff // float
 target // vec3
 exponent // float
-enabled // bool
+visible // bool
 ```
 
 You can use these in your shader code however you want, but typically:
 - `position` controls the position of the light, with the fourth element differentiating between a point or spot light (`0.0`) or a directional light (`1.0`) 
-- `color` and `brightness` will define the light intensity
+- `color` and `intensity` will together define the luminance, which can exceed 1.0
 - `attenuation` controls the light falloff with distance
 - `ambient` is the amount of ambient light associated with this light source
 - `cutoff`, `target`, and `exponent` are the angular cone cutoff, target location, and falloff exponent for a spotlight

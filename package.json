@@ -1,14 +1,14 @@
 {
-  "name": "glsl-basic-light",
+  "name": "glsl-scene-light",
   "version": "1.0.0",
-  "description": "basic GLSL struct for a light source",
+  "description": "GLSL struct for a light source",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/freeman-lab/glsl-basic-light.git"
+    "url": "git+https://github.com/freeman-lab/glsl-scene-light.git"
   },
   "keywords": [
     "glsl",
@@ -19,12 +19,12 @@
   "author": "freeman-lab",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/freeman-lab/glsl-basic-light/issues"
+    "url": "https://github.com/freeman-lab/glsl-scene-light/issues"
   },
   "browserify": {
     "transform": [
       "glslify"
     ]
   },
-  "homepage": "https://github.com/freeman-lab/glsl-basic-light#readme"
+  "homepage": "https://github.com/freeman-lab/glsl-scene-light#readme"
 }
