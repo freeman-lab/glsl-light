@@ -1,6 +1,6 @@
 {
   "name": "glsl-scene-light",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "GLSL struct for a light source",
   "main": "index.js",
   "scripts": {
