@@ -10,4 +10,4 @@ struct BasicLight {
    bool visible;
 };
 
-#pragma glslify: export(BasicLight)
+#pragma glslify: export(SceneLight)
