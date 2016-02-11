@@ -12,40 +12,27 @@ npm install glsl-scene-light --save
 
 ## example
 
-Define 2 lights to use in your shader
+Define a light in your shader
 
 ```glsl
 pragma glslify: SceneLight = require('glsl-scene-light')
-uniform SceneLight lights[2];
+uniform SceneLight light;
 ```
 
 Then set their properties on a `shader` created using `gl-shader`
 
 ```javascript
-shader.uniforms.lights = [
-	{
-		position: [0.0, 0.0, 0.0, 1.0],
-		color: [1.0, 0.0, 1.0],
-		intensity: 1,
-		attenuation: 0.5,
-		ambient: 0.5,
-		cutoff: 180,
-		target: [0, 0, 0],
-		exponent: 0.0,
-		visible: false
-	},
-	{
-		position: [0.0, 0.0, 5.0, 1.0],
-		color: [1.0, 1.0, 0.0],
-		intensity: 2,
-		attenuation: 0.1,
-		ambient: 0.5,
-		cutoff: 45,
-		target: [2, 2, 0],
-		exponent: 0.5,
-		visible: true
-	}
-]
+shader.uniforms.light = {
+	position: [0.0, 0.0, 0.0, 1.0],
+	color: [1.0, 0.0, 1.0],
+	intensity: 1,
+	attenuation: 0.5,
+	ambient: 0.5,
+	cutoff: 180,
+	target: [0, 0, 0],
+	exponent: 0.0,
+	visible: false
+}
 ```
 
 ## API
