@@ -16,7 +16,7 @@ Define 2 lights to use in your shader
 
 ```glsl
 pragma glslify: SceneLight = require('glsl-scene-light')
-uniform BasicLight lights[2];
+uniform SceneLight lights[2];
 ```
 
 Then set their properties on a `shader` created using `gl-shader`
@@ -53,7 +53,7 @@ shader.uniforms.lights = [
 Inside your shader just declare the struct type with
 
 ```glsl
-pragma glslify: BasicLight = require('glsl-basic-light')
+pragma glslify: SceneLight = require('glsl-scene-light')
 ```
 
 and use as you like, e.g. to set a `uniform` or construct a variable.
