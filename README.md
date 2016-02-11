@@ -1,4 +1,4 @@
-# glsl-basic-light
+# glsl-scene-light
 
 GLSL struct for a light source. Designed for use as a shader component with [`glslify`](https://github.com/stackgl/glslify) and [`gl-scene`](https://github.com/freeman-lab/gl-scene).
 
