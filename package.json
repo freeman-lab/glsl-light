@@ -1,5 +1,5 @@
 {
-  "name": "glsl-scene-light",
+  "name": "glsl-light",
   "version": "1.0.1",
   "description": "GLSL struct for a light source",
   "main": "index.js",
@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/freeman-lab/glsl-scene-light.git"
+    "url": "git+https://github.com/freeman-lab/glsl-light.git"
   },
   "keywords": [
     "glsl",
@@ -19,12 +19,12 @@
   "author": "freeman-lab",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/freeman-lab/glsl-scene-light/issues"
+    "url": "https://github.com/freeman-lab/glsl-light/issues"
   },
   "browserify": {
     "transform": [
       "glslify"
     ]
   },
-  "homepage": "https://github.com/freeman-lab/glsl-scene-light#readme"
+  "homepage": "https://github.com/freeman-lab/glsl-light#readme"
 }

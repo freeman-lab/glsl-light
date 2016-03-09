@@ -1,4 +1,4 @@
-struct SceneLight {
+struct Light {
    vec4 position;
    vec3 color; 
    float intensity;
@@ -9,4 +9,4 @@ struct SceneLight {
    bool visible;
 };
 
-#pragma glslify: export(SceneLight)
+#pragma glslify: export(Light)

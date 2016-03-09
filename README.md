@@ -1,13 +1,13 @@
-# glsl-scene-light
+# glsl-light
 
-GLSL struct for a light source. Designed for use as a shader component with [`glslify`](https://github.com/stackgl/glslify) and [`gl-scene`](https://github.com/freeman-lab/gl-scene).
+GLSL struct for a light source. Designed for use as a shader component with [`glslify`](https://github.com/stackgl/glslify).
 
 ## install
 
 To make avaialble in your project
 
 ```javascript
-npm install glsl-scene-light --save
+npm install glsl-light --save
 ```
 
 ## example
@@ -15,8 +15,8 @@ npm install glsl-scene-light --save
 Define a light in your shader
 
 ```glsl
-pragma glslify: SceneLight = require('glsl-scene-light')
-uniform SceneLight light;
+pragma glslify: Light = require('glsl-light')
+uniform Light light;
 ```
 
 Then set their properties on a `shader` created using `gl-shader`
@@ -40,7 +40,7 @@ shader.uniforms.light = {
 Inside your shader just declare the struct type with
 
 ```glsl
-pragma glslify: SceneLight = require('glsl-scene-light')
+pragma glslify: SceneLight = require('glsl-light')
 ```
 
 and use as you like, e.g. to set a `uniform` or construct a variable.
