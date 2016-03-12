@@ -58,3 +58,4 @@ You can use these in your shader code however you want, but typically:
 - `color` and `intensity` will together define the luminance, which can exceed 1.0
 - `radius` controls the extent of the light
 - `ambient` is the amount of ambient light associated with this light source
+- `visible` is a flag to set the light on or off
