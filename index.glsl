@@ -4,8 +4,6 @@ struct Light {
    float intensity;
    float ambient;
    float attenuation;
-   vec3 target;
-   float cutoff;
    bool visible;
 };
 
