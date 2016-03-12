@@ -1,6 +1,6 @@
 {
   "name": "glsl-light",
-  "version": "1.0.1",
+  "version": "2.0.0",
   "description": "GLSL struct for a light source",
   "main": "index.js",
   "scripts": {
