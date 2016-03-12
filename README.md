@@ -26,11 +26,8 @@ shader.uniforms.light = {
 	position: [0.0, 0.0, 0.0, 1.0],
 	color: [1.0, 0.0, 1.0],
 	intensity: 1,
-	attenuation: 0.5,
+	radius: 20.0,
 	ambient: 0.5,
-	cutoff: 180,
-	target: [0, 0, 0],
-	exponent: 0.0,
 	visible: false
 }
 ```
@@ -51,17 +48,13 @@ The attributes and types on the struct are
 position // vec4
 color // vec3
 intensity // float
-attenuation // float
+radius // float
 ambient // float
-cutoff // float
-target // vec3
-exponent // float
 visible // bool
 ```
 
 You can use these in your shader code however you want, but typically:
 - `position` controls the position of the light, with the fourth element differentiating between a point or spot light (`0.0`) or a directional light (`1.0`) 
 - `color` and `intensity` will together define the luminance, which can exceed 1.0
-- `attenuation` controls the light falloff with distance
+- `radius` controls the extent of the light
 - `ambient` is the amount of ambient light associated with this light source
-- `cutoff`, `target`, and `exponent` are the angular cone cutoff, target location, and falloff exponent for a spotlight
