@@ -3,7 +3,7 @@ struct Light {
    vec3 color; 
    float intensity;
    float ambient;
-   float attenuation;
+   float radius;
    bool visible;
 };
 
